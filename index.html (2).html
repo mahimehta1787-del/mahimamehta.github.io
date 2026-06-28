@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahima Mehta, Senior QA &amp; Test Lead</title>
+<meta name="description" content="Senior QA &amp; Test Lead with 15+ years across enterprise telecom and BSS/OSS platforms. Defect lifecycle ownership, system integration testing, and test strategy. ISTQB &amp; PSM I certified. Calgary, AB.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F4F6F4;
+    --surface:#FFFFFF;
+    --ink:#15252A;
+    --muted:#56696D;
+    --faint:#7E9094;
+    --line:#DCE4E1;
+    --teal:#0C4A47;
+    --teal-bright:#12827B;
+    --teal-soft:#E4EEEC;
+    --shadow:0 1px 2px rgba(21,37,42,.04),0 8px 24px rgba(21,37,42,.06);
+    --shadow-lift:0 2px 4px rgba(21,37,42,.06),0 18px 40px rgba(21,37,42,.10);
+    --display:'Space Grotesk',system-ui,sans-serif;
+    --body:'IBM Plex Sans',system-ui,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,monospace;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);color:var(--ink);
+    font-family:var(--body);font-size:17px;line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+
+  .eyebrow{
+    font-family:var(--mono);font-size:12px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--teal-bright);font-weight:500;
+    display:inline-flex;align-items:center;gap:9px;
+  }
+  .eyebrow::before{content:"";width:18px;height:1px;background:var(--teal-bright);opacity:.7}
+
+  h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.12;letter-spacing:-.015em}
+
+  nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(244,246,244,.82);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{max-width:var(--maxw);margin:0 auto;padding:14px 28px;
+    display:flex;align-items:center;justify-content:space-between}
+  .brand{font-family:var(--display);font-weight:600;font-size:16px;letter-spacing:-.01em}
+  .brand span{color:var(--teal-bright)}
+  .nav-links{display:flex;gap:26px}
+  .nav-links a{font-size:14px;color:var(--muted);transition:color .18s}
+  .nav-links a:hover{color:var(--teal)}
+  @media(max-width:720px){.nav-links{display:none}}
+
+  header.hero{padding:84px 0 64px}
+  .hero h1{font-size:clamp(38px,6.2vw,66px);margin:22px 0 0}
+  .hero .lede{
+    font-size:clamp(18px,2.2vw,21px);color:var(--muted);
+    max-width:620px;margin:22px 0 0;line-height:1.55;
+  }
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .chip{
+    font-family:var(--mono);font-size:12.5px;color:var(--teal);
+    background:var(--teal-soft);border:1px solid #cfe0dd;
+    padding:6px 12px;border-radius:100px;
+  }
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+  .btn{
+    font-family:var(--body);font-weight:500;font-size:15px;
+    padding:12px 20px;border-radius:10px;transition:transform .15s,box-shadow .18s,background .18s;
+    display:inline-flex;align-items:center;gap:9px;
+  }
+  .btn-primary{background:var(--teal);color:#fff}
+  .btn-primary:hover{background:#0a3f3c;transform:translateY(-1px);box-shadow:var(--shadow)}
+  .btn-ghost{border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--teal-bright);color:var(--teal);transform:translateY(-1px)}
+
+  .stats{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+    margin-top:54px;border:1px solid var(--line);border-radius:14px;
+    overflow:hidden;background:var(--surface);box-shadow:var(--shadow);
+  }
+  .stat{padding:24px 22px;border-right:1px solid var(--line)}
+  .stat:last-child{border-right:none}
+  .stat .num{font-family:var(--display);font-weight:600;font-size:34px;color:var(--teal);letter-spacing:-.02em}
+  .stat .lbl{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin-top:6px;line-height:1.4}
+  @media(max-width:720px){
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .stat:nth-child(2){border-right:none}
+    .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line)}
+  }
+
+  section{padding:68px 0}
+  .sec-head{max-width:640px;margin-bottom:38px}
+  .sec-head h2{font-size:clamp(26px,3.6vw,38px);margin-top:16px}
+  .sec-head p{color:var(--muted);margin-top:14px}
+
+  .about-body{max-width:660px}
+  .about-body p{margin-top:18px;color:#33474b}
+  .about-body p:first-child{margin-top:0}
+
+  .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  @media(max-width:760px){.skills-grid{grid-template-columns:1fr}}
+  .skill-card{
+    background:var(--surface);border:1px solid var(--line);border-radius:14px;
+    padding:24px 24px 22px;box-shadow:var(--shadow);transition:transform .16s,box-shadow .2s;
+  }
+  .skill-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lift)}
+  .skill-card h3{font-size:13px;font-family:var(--mono);font-weight:500;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--teal-bright);margin-bottom:14px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{font-size:14px;color:#2f4347;background:var(--bg);border:1px solid var(--line);
+    padding:5px 11px;border-radius:8px}
+
+  .case{
+    background:var(--surface);border:1px solid var(--line);border-radius:18px;
+    overflow:hidden;box-shadow:var(--shadow);margin-bottom:26px;
+  }
+  .case-top{padding:30px 32px 0}
+  .case-tag{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+  .case h3{font-size:clamp(22px,3vw,30px);margin:12px 0 4px}
+  .case-sub{color:var(--muted);font-size:15px}
+  .case-metrics{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:24px 0 0;
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  }
+  .case-metrics .m{padding:18px 20px;border-right:1px solid var(--line)}
+  .case-metrics .m:last-child{border-right:none}
+  .case-metrics .mn{font-family:var(--display);font-weight:600;font-size:26px;color:var(--teal)}
+  .case-metrics .ml{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);margin-top:4px;line-height:1.4}
+  @media(max-width:680px){
+    .case-metrics{grid-template-columns:repeat(2,1fr)}
+    .case-metrics .m:nth-child(2){border-right:none}
+    .case-metrics .m:nth-child(1),.case-metrics .m:nth-child(2){border-bottom:1px solid var(--line)}
+  }
+  .case-body{padding:8px 32px 30px}
+  .block{margin-top:24px}
+  .block .lab{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-bright);font-weight:500}
+  .block h4{font-family:var(--display);font-weight:600;font-size:18px;margin:8px 0 8px}
+  .block p{color:#33474b;font-size:15.5px}
+  .result-call{
+    margin-top:24px;background:var(--teal-soft);border:1px solid #cfe0dd;border-radius:12px;
+    padding:18px 20px;color:#143b38;font-size:15.5px;
+  }
+  .result-call strong{color:var(--teal)}
+
+  .lead-call{
+    margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:12px;
+    padding:18px 20px;color:#33474b;font-size:15.5px;
+  }
+  .lead-call strong{color:var(--teal)}
+
+  .timeline{position:relative;padding-left:34px}
+  .timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;
+    background:linear-gradient(to bottom,var(--teal-bright),var(--line))}
+  .role{position:relative;padding-bottom:36px}
+  .role:last-child{padding-bottom:0}
+  .role::before{content:"";position:absolute;left:-34px;top:5px;width:16px;height:16px;border-radius:50%;
+    background:var(--surface);border:3px solid var(--teal-bright);box-shadow:0 0 0 4px var(--bg)}
+  .role .when{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--faint);text-transform:uppercase}
+  .role h3{font-size:20px;margin:5px 0 2px}
+  .role .org{color:var(--teal);font-weight:500;font-size:15px;margin-bottom:4px}
+  .role .ctx{color:var(--muted);font-size:14.5px;margin-bottom:12px}
+  .role ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+  .role li{position:relative;padding-left:18px;color:#33474b;font-size:15px}
+  .role li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:2px;background:var(--teal-bright);opacity:.65}
+
+  .cred-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:760px){.cred-grid{grid-template-columns:1fr}}
+  .cred{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
+  .cred .badge{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-bright)}
+  .cred h3{font-size:17px;margin:10px 0 6px}
+  .cred p{font-size:14px;color:var(--muted)}
+  .edu-note{margin-top:18px;font-size:14.5px;color:var(--muted)}
+  .edu-note strong{color:var(--ink);font-weight:600;font-family:var(--display)}
+
+  .contact{background:var(--teal);color:#eaf3f1;border-radius:22px;padding:52px 44px;margin-bottom:20px}
+  .contact .eyebrow{color:#8fd4cd}
+  .contact .eyebrow::before{background:#8fd4cd}
+  .contact h2{color:#fff;font-size:clamp(26px,3.6vw,38px);margin-top:16px}
+  .contact p{color:#cfe6e2;margin-top:14px;max-width:560px}
+  .contact .cta-row{margin-top:28px}
+  .contact .btn-primary{background:#fff;color:var(--teal)}
+  .contact .btn-primary:hover{background:#eaf3f1}
+  .contact .btn-ghost{background:transparent;border-color:#3f7c78;color:#eaf3f1}
+  .contact .btn-ghost:hover{border-color:#8fd4cd;color:#fff}
+
+  footer{padding:34px 0 56px;text-align:center}
+  footer p{font-family:var(--mono);font-size:12.5px;color:var(--faint);letter-spacing:.03em}
+
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+  }
+  :focus-visible{outline:2px solid var(--teal-bright);outline-offset:3px;border-radius:4px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="#top">Mahima Mehta<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Capabilities</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow">Senior QA &amp; Test Lead · Calgary, AB</span>
+    <h1>Mahima Mehta</h1>
+    <p class="lede">Fifteen-plus years making complex telecom and BSS/OSS platforms reliable, owning quality end to end, from test strategy through defect resolution to release sign-off.</p>
+    <div class="chips">
+      <span class="chip">Canadian Permanent Resident</span>
+      <span class="chip">ISTQB Foundation</span>
+      <span class="chip">PSM I</span>
+      <span class="chip">Available immediately</span>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="mailto:mahimehta1787@gmail.com">Email me</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/mahimam87/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="tel:+18254541787">(825) 454-1787</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="num">15+</div><div class="lbl">Years in QA &amp; test</div></div>
+      <div class="stat"><div class="num">40%</div><div class="lbl">Fewer post-deployment defects</div></div>
+      <div class="stat"><div class="num">30%</div><div class="lbl">Test coverage increase</div></div>
+      <div class="stat"><div class="num">200+</div><div class="lbl">Defect backlog managed</div></div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap reveal">
+    <div class="sec-head">
+      <span class="eyebrow">About</span>
+      <h2>I make complex systems reliable.</h2>
+    </div>
+    <div class="about-body">
+      <p>Most of my career has been spent on large-scale telecom and BSS/OSS platforms at Nokia and Ericsson, the kind of systems where a defect that reaches production is expensive and risky. My focus has always been the same: own quality from end to end, test where the risk actually lives, and leave a team more capable than I found it.</p>
+      <p>That work spans the full delivery cycle: translating business requirements into specifications and user stories, documenting system integration flows and API behaviour, coordinating UAT through to sign-off, and owning defects from triage through to verified closure. I'm a Canadian permanent resident based in Calgary, available immediately, and focused on <strong>Senior QA, Test Lead, and Business Systems Analyst</strong> roles where structured testing, clear documentation, and dependable follow-through matter.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap reveal">
+    <div class="sec-head">
+      <span class="eyebrow">Capabilities</span>
+      <h2>What I bring</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Quality &amp; Testing</h3>
+        <div class="tags">
+          <span class="tag">Test Planning</span><span class="tag">Test Strategy</span>
+          <span class="tag">Test Case Design</span><span class="tag">Defect Lifecycle Management</span>
+          <span class="tag">Root Cause Analysis</span><span class="tag">System Integration Testing (SIT)</span>
+          <span class="tag">UAT Coordination</span><span class="tag">Regression Testing</span>
+          <span class="tag">Test Coverage Analysis</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <div class="tags">
+          <span class="tag">JIRA</span><span class="tag">Confluence</span><span class="tag">SoapUI</span>
+          <span class="tag">Selenium</span><span class="tag">Robot Framework</span><span class="tag">MHWEB</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Process &amp; Delivery</h3>
+        <div class="tags">
+          <span class="tag">Agile &amp; Scrum</span><span class="tag">Sprint Planning</span>
+          <span class="tag">Release Readiness</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Business Systems Analysis</h3>
+        <div class="tags">
+          <span class="tag">Requirements Gathering</span><span class="tag">Systems Analysis</span>
+          <span class="tag">Business Rules Documentation</span><span class="tag">Stakeholder Management</span>
+          <span class="tag">REST API Testing</span><span class="tag">User Story Validation</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Domain</h3>
+        <div class="tags">
+          <span class="tag">BSS / OSS</span><span class="tag">Telecom Billing &amp; Charging</span>
+          <span class="tag">Microservices Platforms</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap reveal">
+    <div class="sec-head">
+      <span class="eyebrow">Evidence</span>
+      <h2>Selected work</h2>
+      <p>Two examples of how I approach quality: one about catching defects before they ship, and one about making a whole team faster.</p>
+    </div>
+
+    <article class="case">
+      <div class="case-top">
+        <span class="case-tag">Case Study · Nokia · Smart Plan Suite (Converged Charging) · 2018–2024</span>
+        <h3>Cutting post-deployment defects by 40%</h3>
+        <div class="case-sub">Senior Test Specialist · 5G-ready BSS monetization platform</div>
+      </div>
+      <div class="case-metrics">
+        <div class="m"><div class="mn">40%</div><div class="ml">Fewer post-deployment defects</div></div>
+        <div class="m"><div class="mn">30%</div><div class="ml">Test coverage increase</div></div>
+        <div class="m"><div class="mn">150+</div><div class="ml">Agile sprint cycles</div></div>
+        <div class="m"><div class="mn">E2E</div><div class="ml">SIT ownership</div></div>
+      </div>
+      <div class="case-body">
+        <div class="block">
+          <span class="lab">The problem</span>
+          <h4>Defects were reaching a platform that couldn't afford them</h4>
+          <p>The Smart Plan Suite is a 5G-ready charging platform: microservices-based, integration-heavy, and customer-facing. Defect handling was reactive at the time. Issues were logged and passed along, but no one owned them from discovery to verified closure, and coverage had gaps in the places that mattered most, the integration points and data flows between services. The same kinds of defect kept recurring across releases.</p>
+        </div>
+        <div class="block">
+          <span class="lab">The solution</span>
+          <h4>Own the defect lifecycle, and test where the risk lives</h4>
+          <p>I took ownership of the full defect lifecycle in JIRA, from triage and root-cause analysis through escalation to closure, so defects stopped falling through the gaps between development and services. Alongside that, I reworked the SIT test strategy around risk rather than volume, concentrating test design on the integration points, API interactions, and edge behaviours where defects were actually starting, and I documented the integration flows and API interactions (REST, Diameter) so the whole team had one reference to work from.</p>
+        </div>
+        <div class="result-call">
+          <span class="lab" style="color:var(--teal)">The result</span><br>
+          Post-deployment defects came down by roughly <strong>40%</strong>, and meaningful test coverage rose <strong>30%</strong>. That came from testing the things that actually carried risk, not from writing more tests. Owning the lifecycle end to end made defect handling predictable instead of reactive.
+        </div>
+        <div class="lead-call">
+          <span class="lab" style="color:var(--teal)">Leading the work</span><br>
+          Beyond owning the testing, I mentored a <strong>4-member QA team</strong> as QA Lead, led Agile ceremonies and knowledge-transfer sessions for teams of <strong>10–20 engineers</strong>, and became the primary technical reference colleagues relied on to understand how the platform behaved.
+        </div>
+      </div>
+    </article>
+
+    <article class="case">
+      <div class="case-top">
+        <span class="case-tag">Case Study · Nokia · Team Enablement · 2018–2024</span>
+        <h3>Cutting team ramp-up time by 25%</h3>
+        <div class="case-sub">Senior Test Specialist · onboarding &amp; knowledge systems</div>
+      </div>
+      <div class="case-metrics">
+        <div class="m"><div class="mn">25%</div><div class="ml">Faster ramp-up</div></div>
+        <div class="m"><div class="mn">10+</div><div class="ml">Engineers supported</div></div>
+        <div class="m"><div class="mn">150+</div><div class="ml">Sprint cycles</div></div>
+        <div class="m"><div class="mn">1</div><div class="ml">Reference point built</div></div>
+      </div>
+      <div class="case-body">
+        <div class="block">
+          <span class="lab">The problem</span>
+          <h4>Knowledge lived in people's heads, not in the system</h4>
+          <p>On a complex platform with distributed teams, ramp-up depended on informal knowledge transfer, with senior engineers pausing their own work to walk newcomers through undocumented processes. It was slow, inconsistent, and costly every time someone new joined.</p>
+        </div>
+        <div class="block">
+          <span class="lab">The solution</span>
+          <h4>Build the knowledge infrastructure once, maintain it for good</h4>
+          <p>I built traceability matrices, structured Confluence knowledge systems, and onboarding material designed for reuse, so good practice didn't depend on any one person being available. Everything was built to be updated as the platform evolved, rather than rebuilt from scratch.</p>
+        </div>
+        <div class="result-call">
+          <span class="lab" style="color:var(--teal)">The result</span><br>
+          New-team ramp-up dropped by approximately <strong>25%</strong>, measured through team-lead feedback and faster time-to-first-contribution, and I became the primary technical reference for how the platform behaved.
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap reveal">
+    <div class="sec-head">
+      <span class="eyebrow">Track record</span>
+      <h2>Experience</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="role">
+        <div class="when">Aug 2018 – Jul 2024</div>
+        <h3>Senior Test Specialist</h3>
+        <div class="org">Nokia Solutions and Networks</div>
+        <div class="ctx">Nokia Smart Plan Suite (Converged Charging): 5G-ready BSS monetization platform</div>
+        <ul>
+          <li>Owned the full defect lifecycle in JIRA, from triage and root-cause analysis through escalation to closure, reducing post-deployment defects by ~40%.</li>
+          <li>Designed end-to-end SIT test plans and cases across microservices components, increasing test coverage by ~30%.</li>
+          <li>Translated business requirements into technical specifications and user stories supporting sprint planning and release readiness.</li>
+          <li>Documented system integration flows and API interactions (REST, Diameter) as the primary technical reference for cross-functional teams.</li>
+          <li>Coordinated UAT through to sign-off across 150+ Agile sprints; built knowledge systems that cut ramp-up time by ~25%.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="when">Apr 2015 – Aug 2018</div>
+        <h3>Senior Verification Engineer &amp; BSS Test Lead</h3>
+        <div class="org">Ericsson</div>
+        <div class="ctx">Ericsson Revenue Manager: NUM and COBA modules</div>
+        <ul>
+          <li>Served as primary point of contact for the NUM module, owning defect verification through to closure and cross-team alignment across the Revenue Manager platform.</li>
+          <li>Managed a 200+ defect backlog, improving average resolution time by ~20% through structured triage and prioritization.</li>
+          <li>Built and executed REST API test suites using SoapUI across functional and regression cycles.</li>
+          <li>Analyzed REST API interactions and data flows, documenting business rules for development and QA teams.</li>
+          <li>Led Agile ceremonies and knowledge-transfer sessions for teams of 10 to 20 engineers.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="when">Aug 2010 – Mar 2015</div>
+        <h3>QA Lead</h3>
+        <div class="org">Hughes Systique Corporation</div>
+        <ul>
+          <li>Led end-to-end system and functional testing for fault-management and monitoring features across 8+ NMS releases.</li>
+          <li>Increased fault detection by ~35% through stronger test-scenario design.</li>
+          <li>Automated 60+ regression scenarios using Selenium and Robot Framework, reducing manual test effort by ~40%.</li>
+          <li>Mentored a 4-member QA team on testing and documentation standards.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="when">2009 – Aug 2010</div>
+        <h3>QA Engineer</h3>
+        <div class="org">Infosys Technologies</div>
+        <ul>
+          <li>Executed 100+ test cases across a banking application certification project, reducing test gaps by ~20%.</li>
+          <li>Mapped business requirements to system functionality and maintained structured test documentation.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="credentials">
+  <div class="wrap reveal">
+    <div class="sec-head">
+      <span class="eyebrow">Credentials</span>
+      <h2>Certifications &amp; education</h2>
+    </div>
+    <div class="cred-grid">
+      <div class="cred">
+        <span class="badge">Scrum.org · Active</span>
+        <h3>Professional Scrum Master I</h3>
+        <p>Agile delivery, sprint facilitation, and iterative practices.</p>
+      </div>
+      <div class="cred">
+        <span class="badge">ISTQB · Active</span>
+        <h3>ISTQB Foundation Level</h3>
+        <p>Test design principles, defect management, and QA methodology.</p>
+      </div>
+      <div class="cred">
+        <span class="badge">CIWA · Calgary</span>
+        <h3>Professional Development</h3>
+        <p>Professional development program at CIWA, Calgary (completing July 2026).</p>
+      </div>
+    </div>
+    <p class="edu-note"><strong>B.Tech, Computer Science.</strong> Allahabad Agricultural Institute (Deemed University), studied at ITM College (now NorthCap University), India · 2008</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap reveal">
+    <div class="contact">
+      <span class="eyebrow">Contact</span>
+      <h2>Let's talk quality.</h2>
+      <p>I'm open to Senior QA, Test Lead, and Business Systems Analyst roles in Calgary and remote. Permanent resident, available immediately.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:mahimehta1787@gmail.com">mahimehta1787@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/mahimam87/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="tel:+18254541787">(825) 454-1787</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Mahima Mehta · Senior QA &amp; Test Lead · Calgary, AB · Canadian Permanent Resident</p>
+  </div>
+</footer>
+
+<script>
+  const obs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
